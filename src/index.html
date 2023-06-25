@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Daily Astro Reading</title>
+    <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+
+  </head>
+
+  <body>
+    <div class="background">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+   </div>
+    <header>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="#" id="contact-astro"
+            >Contact Astrologer</a
+          >
+        </li>
+      </ul>
+    </header>
+
+      <h1>Pick your reading</h1>
+      <div class="buttons">
+        <button onclick="astro.displayForDay('yesterday');">Yesterday</button>
+        <button onclick="astro.displayForDay('today');">Today</button>
+        <button onclick="astro.displayForDay('tomorrow');">Tomorrow</button>
+      </div>
+      
+    <section id="zodiac-signs" class="zodiac-signs"></section>
+
+    <form>
+      <label for="name">Your Name</label><br />
+      <input
+        type="text"
+        id="name"
+        name="user_name"
+        placeholder="Your Name"
+        required
+      />
+      <br />
+      <label for="email">Your E-mail Address</label><br />
+      <input
+        type="email"
+        id="name"
+        name="e_mail"
+        placeholder="name@gmail.com"
+        required
+      />
+      <br />
+      <label for="message">Your Message</label><br />
+      <textarea
+        name="message"
+        rows="10"
+        cols="30"
+        placeholder="Your message"
+        required
+      ></textarea>
+      <br />
+      <button type="submit" >Submit</button>
+    </form>
+  </body>
+</html>
